@@ -35,4 +35,11 @@ describe("#wordSearch()", function() {
 
     assert.isTrue(result);
   });
+
+  it("should return false/undefined for an empty array", function () {
+    const result = wordSearch([], "BISL");
+
+    assert.isFalse(result);
+  });
+
 });
